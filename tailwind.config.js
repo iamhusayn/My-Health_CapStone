@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        hoverColor: "#ffc000",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
