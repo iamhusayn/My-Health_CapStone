@@ -33,7 +33,7 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                href={"/values"}
+                href={"/Values"}
                 className="hover:text-slate-400 transition-all"
               >
                 Values
@@ -60,14 +60,14 @@ const Navbar = () => {
 
             <div className="lg:hidden flex items-center">
               {menu ? (
-                <BiXCircle size={28} OnClick={handleChange} />
+                <BiXCircle size={28} onClick={handleChange} />
               ) : (
-                <BiMenu size={28} OnClick={handleChange} />
+                <BiMenu size={28} onClick={handleChange} />
               )}
             </div>
           </div>
 
-          <div className={`${menu ? "translate-x-0" : "translate-x-full"} lg:hidden flex flex-col absolute bg-slate-950 text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-6 w-full h-fit transition-transform duration-200`}>
+          <div className={`${menu ? "translate-x-0" : "translate-x-full"} lg:hidden flex flex-col absolute bg-slate-950 text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-4 w-full h-fit transition-transform duration-200`}>
             <Link href={"/"} className="hover:text-slate-400 transition-all">
               Home
             </Link>

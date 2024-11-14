@@ -1,9 +1,18 @@
-import Image from "next/image";
+import React from 'react'
+import HeroSession from './_components/HeroSession';
+import About from './Paths/About/about';
+import Services from './Paths/Services/services';
 
-export default function Home() {
+const Page = () => {
   return (
     <>
-      <div className=""> </div>
+      <HeroSession />
+
+      <About />
+    
+      <Services />
     </>
-  )  
+  );
 }
+
+export default Page;
