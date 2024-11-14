@@ -33,7 +33,7 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                href={"/Values"}
+                href={"/values"}
                 className="hover:text-slate-400 transition-all"
               >
                 Values
