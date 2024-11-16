@@ -8,7 +8,7 @@ import { FaHeartbeat } from "react-icons/fa";
 
 
 
-const Services = () => {
+const ServicesPage = () => {
   const icon1 = <RiMicroscopeLine size={35} className="text-background"/>
   const icon2 = <FaHeartbeat size={35} className="text-background"/>
   const icon3 = <BsLungsFill size={35} className="text-background"/>
@@ -36,4 +36,4 @@ const Services = () => {
   );
 }
 
-export default Services
+export default ServicesPage;

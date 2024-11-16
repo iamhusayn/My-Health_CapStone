@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { CldImage } from "next-cloudinary";
 
 const About = () => {
   return (
@@ -36,10 +36,16 @@ const About = () => {
         </p>
       </div>
       <div className="w-full lg:w-3/4">
-        <Image src="https://res.cloudinary.com/digotb1jl/image/upload/v1730435396/pexels-kampus-7492987_icichy.jpg" alt="image" width={400} height={400} className='rounded-sm'/>
+        <Image
+          src="https://res.cloudinary.com/digotb1jl/image/upload/v1730435396/pexels-kampus-7492987_icichy.jpg"
+          alt="image"
+          width={400}
+          height={400}
+          className="rounded-sm"
+        />
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;
