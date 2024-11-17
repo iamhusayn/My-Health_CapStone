@@ -110,9 +110,9 @@ const Footer = () => {
               <label> </label>
             </form>
 
-            <div>
-              <HeaderBtn btnTittle={"Subscribe"} />
-            </div>
+            
+            <HeaderBtn btnTittle={"Subscribe"} />
+            
           </div>
         </div>
       </div>

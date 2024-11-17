@@ -3,7 +3,7 @@ import Image from "next/image";
 import { CldImage } from "next-cloudinary";
 import HeroSession from "../_components/HeroSession";
 import About from "../about/About";
-import Services from "../services/page";
+import Services from "../services/Services";
 import Doctors from "../_components/Doctors";
 import Blog from "../blog/Blog";
 import HeaderBtn from "../_components/Buttons/HeaderBtn";
@@ -11,8 +11,8 @@ import HeaderBtn from "../_components/Buttons/HeaderBtn";
 export function Home() {
   return (
     <>
-      <div className="relative">
-        <div className="absolute -z-100">
+      <div className="relative ">
+        <div className="absolute -z-10">
           <Image
             src="https://res.cloudinary.com/digotb1jl/image/upload/v1730398708/pexels-cristian-rojas-8460371_ox25dp.jpg"
             alt="Picture of doctors"
@@ -20,9 +20,9 @@ export function Home() {
             height={100}
           />
         </div>
-        <div className="">
+        <div className="z-10">
           <HeroSession
-            heroheader="WELCOME TO MEDICARE"
+            heroheader="Welcome to MediCare"
             heroparagraph="Providing clinical, financial, and emotional support through the most vulnerable and joyful life stages"
           />
         </div>
