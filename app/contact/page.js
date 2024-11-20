@@ -17,22 +17,24 @@ const ContactPage = () => {
             height={400}
           />
         </div>
-        <header className="flex flex-row justify-center bg-slate-950 bg-opacity-40 h-[322px] md:h-[800px] md:pt-80 pt-28 w-full space-y-2 z-0">
-          <div className="text-white text-center w-[52rem] h-[18rem]">
-            <HeroSession
-              heroheader="Meet Our Professionals"
-              heroparagraph="We're here to help you through your health journey."
-            />
-          </div>
-        </header>
+        <div className="bg-slate-950 bg-opacity-40 w-full h-full">
+          <header className="flex flex-row justify-center h-[322px] lg:h-[800px] lg:pt-80 lg:w-full w-3/4 pt-40 space-y-2 m-auto">
+            <div className="text-white text-center w-[52rem] h-[18rem]">
+              <HeroSession
+                heroheader="Meet Our Professionals"
+                heroparagraph="We're here to help you through your health journey."
+              />
+            </div>
+          </header>
+        </div>
       </section>
 
-      <section className="mx-auto px-8 py-16 bg-white gap-10">
+      <section className="mx-auto px-8 pt-60 py-16 bg-white gap-10">
         <h2 className="text-3xl md:text-6xl font-bold text-center mb-8">
           We'd love to have a conversation
         </h2>
 
-        <div className="flex flex-col md:flex-col items-center bg-slate-950 md:w-[1200px] md:h-[700px] m-auto p-auto p-16 rounded-lg gap-10">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 items-center bg-slate-950 md:w-[1200px] md:h-[700px] m-auto p-auto p-16 rounded-lg gap-10">
           <div>
             <form
               action="https://formsubmit.co/alawiyehusayn@email.com"
@@ -73,15 +75,13 @@ const ContactPage = () => {
             </form>
           </div>
 
-          <div className="flex flex-col items-center mx-auto md:w-3/4 space-y-4">
-            <label className="text-white">Message</label>
+          <div className="flex flex-col items-center lg:w-full space-y-4">
+            <label className="text-white">Write a message</label>
             <textarea
-              className="w-[320px] md:w-[800px] rounded-md"
+              className="w-[390px] lg:w-[600px] rounded-md p-4"
               rows="10"
             ></textarea>
-          </div>
-          <div className="text-center">
-            <ContentBtn btnTittle="Submit" />
+            <ContentBtn btnTittle="Submit" className="text-center" />
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@ import {
   BiLogoSnapchat,
   BiLogoYoutube,
 } from "react-icons/bi";
-import HeaderBtn from "./Buttons/HeaderBtn";
+import ContentBtn from "./Buttons/ContentBtn";
 
 const Footer = () => {
   return (
@@ -111,7 +111,7 @@ const Footer = () => {
             </form>
 
             
-            <HeaderBtn btnTittle={"Subscribe"} />
+            <ContentBtn btnTittle={"Subscribe"} />
             
           </div>
         </div>
