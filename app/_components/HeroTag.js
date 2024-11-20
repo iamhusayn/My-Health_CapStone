@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderBtn from "./Buttons/HeaderBtn";
 
-const HeroSession = ({ heroheader, heroparagraph }) => {
+const HeroTag = ({ heroheader, heroparagraph }) => {
   return (
     <>
       <div className="max-h-screen w-full flex flex-col justify-center lg:px-32 lg:py-10 py-8 px-16 text-white bg-slate-950 opacity-90 rounded-xl bg-no-repeat bg-cover z-50">
@@ -17,4 +17,4 @@ const HeroSession = ({ heroheader, heroparagraph }) => {
   );
 };
 
-export default HeroSession;
+export default HeroTag;

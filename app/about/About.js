@@ -5,7 +5,7 @@ import { CldImage } from "next-cloudinary";
 
 const About = () => {
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center lg:px-32 px-5 pt-20 lg:pt-16 text-slate-950 bg-no-repeat bg-cover opacity-80">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center lg:px-32 px-5 pt-60 lg:pt-16 text-slate-950 bg-no-repeat bg-cover opacity-80">
       <div className="w-full lg:w-3/4 space-y-8">
         <h1 className="text-4xl lg:text-6xl font-bold text-center lg:text-center">
           About Us

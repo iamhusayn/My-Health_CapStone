@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import { CldImage } from "next-cloudinary";
-import HeroSession from "../_components/HeroSession";
 import ContentBtn from "../_components/Buttons/ContentBtn";
 import SectionHeader from "../_components/SectionHeader";
+import HeroTag from "../_components/HeroTag";
 
 const ContactPage = () => {
   return (
@@ -17,10 +17,10 @@ const ContactPage = () => {
             height={400}
           />
         </div>
-        <div className="bg-slate-950 bg-opacity-40 w-full h-full">
+        <div className="bg-slate-950 bg-opacity-40 w-full min-h-full">
           <header className="flex flex-row justify-center h-[322px] lg:h-[800px] lg:pt-80 lg:w-full w-3/4 pt-40 space-y-2 m-auto">
             <div className="text-white text-center w-[52rem] h-[18rem]">
-              <HeroSession
+              <HeroTag
                 heroheader="Meet Our Professionals"
                 heroparagraph="We're here to help you through your health journey."
               />
@@ -34,46 +34,44 @@ const ContactPage = () => {
           We'd love to have a conversation
         </h2>
 
-        <div className="flex flex-col lg:grid lg:grid-cols-2 items-center bg-slate-950 md:w-[1200px] md:h-[700px] m-auto p-auto p-16 rounded-lg gap-10">
-          <div>
-            <form
-              action="https://formsubmit.co/alawiyehusayn@email.com"
-              method="POST"
-              className="text-slate-950 flex flex-col space-y-4"
-            >
-              <label className="text-white">First Name</label>
-              <input
-                className="bg-white rounded-md h-10 w-[400px]"
-                type="text"
-                id="text"
-                name="text"
-              />
+        <div className="flex flex-col lg:grid lg:grid-cols-2 items-center justify-center bg-slate-950 lg:max-w-[1200px] lg:h-full m-auto p-auto p-16 rounded-lg gap-10">
+          <form
+            action="https://formsubmit.co/alawiyehusayn@email.com"
+            method="POST"
+            className="text-slate-950 flex flex-col space-y-4"
+          >
+            <label className="text-white">First Name</label>
+            <input
+              className="bg-white rounded-md h-10 w-[400px]"
+              type="text"
+              id="text"
+              name="text"
+            />
 
-              <label className="text-white">Last Name</label>
-              <input
-                className="bg-white rounded-md h-10 w-[400px]"
-                type="text"
-                id="text"
-                name="text"
-              />
+            <label className="text-white">Last Name</label>
+            <input
+              className="bg-white rounded-md h-10 w-[400px]"
+              type="text"
+              id="text"
+              name="text"
+            />
 
-              <label className="text-white">Age</label>
-              <input
-                className="bg-white rounded-md h-10 w-[400px]"
-                type="text"
-                id="text"
-                name="text"
-              />
+            <label className="text-white">Age</label>
+            <input
+              className="bg-white rounded-md h-10 w-[400px]"
+              type="text"
+              id="text"
+              name="text"
+            />
 
-              <label className="text-white">Gender</label>
-              <input
-                className="bg-white rounded-md  h-10 w-[400px]"
-                type="text"
-                id="text"
-                name="text"
-              />
-            </form>
-          </div>
+            <label className="text-white">Gender</label>
+            <input
+              className="bg-white rounded-md  h-10 w-[400px]"
+              type="text"
+              id="text"
+              name="text"
+            />
+          </form>
 
           <div className="flex flex-col items-center lg:w-full space-y-4">
             <label className="text-white">Write a message</label>
@@ -96,7 +94,7 @@ const ContactPage = () => {
               <Image
                 src="https://res.cloudinary.com/digotb1jl/image/upload/v1730454962/pexels-carmel-nsenga-735492-18788957_ppwne7.jpg"
                 alt="Team Member 1"
-                width={300}
+                width={200}
                 height={300}
                 className="rounded-lg mx-auto"
               />
@@ -107,7 +105,7 @@ const ContactPage = () => {
               <Image
                 src="https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg"
                 alt="Team Member 2"
-                width={300}
+                width={200}
                 height={300}
                 className="rounded-lg mx-auto"
               />
@@ -118,7 +116,7 @@ const ContactPage = () => {
               <Image
                 src="https://res.cloudinary.com/digotb1jl/image/upload/v1730454966/pexels-shkrabaanthony-6749777_oo8kpj.jpg"
                 alt="Team Member 3"
-                width={300}
+                width={200}
                 height={300}
                 className="rounded-lg mx-auto"
               />

@@ -1,18 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import { CldImage } from "next-cloudinary";
-import HeroSession from "../_components/HeroSession";
+import HeroSession from "../_components/HeroTag";
 import About from "../about/About";
 import Services from "../services/Services";
 import Doctors from "../_components/Doctors";
 import Blog from "../blog/Blog";
 import HeaderBtn from "../_components/Buttons/HeaderBtn";
+import HeroTag from "../_components/HeroTag";
 
 export function Home() {
   return (
     <>
-      <div className="relative ">
-        <div className="absolute -z-10">
+      <session className="relative flex justify-center md:h-[800px]">
+        <div className="absolute overflow-hidden -z-50">
           <Image
             src="https://res.cloudinary.com/digotb1jl/image/upload/v1730398708/pexels-cristian-rojas-8460371_ox25dp.jpg"
             alt="Picture of doctors"
@@ -20,15 +21,21 @@ export function Home() {
             height={100}
           />
         </div>
-        <div className="z-10">
-          <HeroSession
-            heroheader="Welcome to MediCare"
-            heroparagraph="Providing clinical, financial, and emotional support through the most vulnerable and joyful life stages"
-          />
+        <div className="bg-slate-950 bg-opacity-40 w-full min-h-full">
+          <header className="flex flex-row justify-center h-[322px] lg:h-[800px] lg:pt-80 lg:w-full w-3/4 pt-40 space-y-2 m-auto">
+            <div className="text-white text-center w-[52rem] h-[18rem]">
+              <HeroTag
+                heroheader="Welcome to MediCare"
+                heroparagraph="We help you through the most vulnerable and joyful life stages"
+              />
+            </div>
+          </header>
         </div>
-      </div>
+      </session>
 
-      <About />
+      <session className="pt-60">
+        <About />
+      </session>
 
       <Services />
 
