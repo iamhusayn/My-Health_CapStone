@@ -17,7 +17,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full rounded-xl z-10 pt-4">
+    <div className="fixed w-full z-10 pt-4">
       <div>
         <div className="bg-white text-slate-950 flex flex-row justify-center p-5 md:px-20 px-2 shadow-md rounded-lg">
           <div className="flex flex-row md:justify-evenly md:items-center cursor-pointer gap-40">
