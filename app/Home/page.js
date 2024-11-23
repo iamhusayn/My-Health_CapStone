@@ -10,6 +10,7 @@ import HeaderBtn from "../_components/Buttons/HeaderBtn";
 import HeroTag from "../_components/HeroTag";
 import SupportCard from "../_components/SupportCard";
 import SectionHeader from "../_components/SectionHeader";
+import Reviews from "../_components/Review";
 
 export function Home() {
   return (
@@ -52,6 +53,8 @@ export function Home() {
       <Services />
 
       <Doctors />
+
+      <Reviews />
 
       <Blog />
     </>

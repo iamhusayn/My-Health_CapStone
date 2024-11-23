@@ -108,14 +108,14 @@ const Doctors = () => {
         </div>
       </div>
       <div className="flex flex-col lg:gird lg:grid-cols-2 justify-center mt-10">
-        <div ref={slider} className="my-0 mx-3">
+        <div ref={slider} className="my-6 mx-3">
           {meetDocs.map((e, index) => (
             <div
-              className="w-[350px] h-[350px] text-black rounded -xl shadow-lg mb-2 cursor-pointer"
+              className="w-[350px] h-[350px] text-black rounded-xl shadow-lg mb-2 cursor-pointer"
               key={index}
             >
-              <div className="h-56 rounded-t-2xl w-full">
-                <img src={e.img} alt="img" />
+              <div className="m-auto h-56 w-40">
+                <img src={e.imageUrl} alt="img" />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h1 className="font-semibold text-xl pt-4">{e.name}</h1>

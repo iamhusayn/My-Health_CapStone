@@ -33,20 +33,20 @@ export function ValuePage() {
             paragraph="Why are these our values?"
           />
         </div>
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-14 py-16">
-          <div className="bg-slate-950 w-96 md:w-[700px] md:h-[300px] rounded-lg p-12 space-y-4">
-            <h3 className="text-white text-2xl md:text-4xl">
+        <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-2 gap-14 py-16">
+          <div className="bg-slate-950 w-96 lg:w-[700px] lg:h-[300px] rounded-lg p-12 space-y-4">
+            <h3 className="text-white text-2xl lg:text-4xl">
               <strong>Trust:</strong>
             </h3>
-            <p className="text-white text-lg md:text-2xl">
+            <p className="text-white text-lg lg:text-2xl">
               Central to MediCare's mission is trust. We believe in cultivating
               trust-filled relationships that serve as the bedrock for enduring
               partnerships.
             </p>
           </div>
 
-          <div className="bg-slate-950 w-96 md:w-[700px] md:h-[300px] rounded-lg p-12 space-y-4">
-            <h3 className="text-white text-2xl md:text-4xl">
+          <div className="bg-slate-950 w-96 lg:w-[700px] lg:h-[300px] rounded-lg p-12 space-y-4">
+            <h3 className="text-white text-2xl lg:text-4xl">
               <strong>Innovation:</strong>
             </h3>
             <p className="text-white text-lg md:text-2xl">
