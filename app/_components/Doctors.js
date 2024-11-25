@@ -38,6 +38,39 @@ const Doctors = () => {
       name: "Dr. Akuyili",
       speciality: "Psychiatrist",
     },
+
+    {
+      id: 5,
+      imageUrl:
+        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
+      name: "Dr. Akuyili",
+      speciality: "Psychiatrist",
+    },
+
+    {
+      id: 6,
+      imageUrl:
+        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
+      name: "Dr. Akuyili",
+      speciality: "Psychiatrist",
+    },
+
+
+    {
+      id: 7,
+      imageUrl:
+        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
+      name: "Dr. Akuyili",
+      speciality: "Psychiatrist",
+    },
+
+    {
+      id: 8,
+      imageUrl:
+        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
+      name: "Dr. Akuyili",
+      speciality: "Psychiatrist",
+    },
   ];
 
   const slider = useRef(null);
@@ -80,8 +113,8 @@ const Doctors = () => {
   // };
 
   return (
-    <div className="min-h-screen w-full flex flex-col justify-center lg:px-32 px-5 pt-24 lg:pt-16">
-      <div className="flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
+    <div className="min-h-screen w-full flex flex-col justify-center items-center lg:px-32 px-5 pt-24 lg:pt-16">
+      <div className="flex flex-col items-center justify-center mb-10 lg:mb-0">
         <div>
           <h1 className="text-4xl font-semibold text-center lg:text-start">
             Our Doctors
@@ -107,8 +140,9 @@ const Doctors = () => {
           </div>
         </div>
       </div>
+
       <div className="flex flex-col lg:gird lg:grid-cols-2 justify-center mt-10">
-        <div ref={slider} className="my-6 mx-3">
+        <div ref={slider} className="my-6 mx-3 lg:grid lg:grid-cols-3 gap-20">
           {meetDocs.map((e, index) => (
             <div
               className="w-[350px] h-[350px] text-black rounded-xl shadow-lg mb-2 cursor-pointer"

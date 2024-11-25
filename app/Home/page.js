@@ -11,6 +11,9 @@ import HeroTag from "../_components/HeroTag";
 import SupportCard from "../_components/SupportCard";
 import SectionHeader from "../_components/SectionHeader";
 import Reviews from "../_components/Review";
+import Sponsor from "../_components/Sponsor";
+import ContentBtn from "../_components/Buttons/ContentBtn";
+import Footer2 from "../_components/Footer2";
 
 export function Home() {
   return (
@@ -25,9 +28,9 @@ export function Home() {
             className="lg:w-[1900px] lg:h-[800px]"
           />
         </div>
-        <div className="bg-slate-950 bg-opacity-40 w-full min-h-full lg:overflow-hidden">
+        <div className="bg-slate-950 bg-opacity-40 min-w-full min-h-full lg:overflow-hidden">
           <header className="flex flex-row justify-center h-[322px] lg:h-[800px] lg:pt-80 lg:w-full w-3/4 pt-40 space-y-2 m-auto">
-            <div className="text-white text-center w-[52rem] h-[18rem]">
+            <div className="text-white text-center w-[800px] h-[200px]">
               <HeroTag
                 heroheader="Welcome to MediCare"
                 heroparagraph="We help you through the most vulnerable and joyful life stages"
@@ -39,11 +42,7 @@ export function Home() {
 
       <section className="items-center mt-80 lg:mt-28">
         <SectionHeader header="An end-to-end platform supporting members in 175+ countries" />
-        <SupportCard
-          header="Unparalleled Access"
-          paragraph="On-demand virtual specialists—including reproductive endocrinologists, doulas, and mental health providers—to support clinical, emotional, and financial needs."
-          number="01"
-        />
+        <SupportCard />
       </section>
 
       <session className="pt-60">
@@ -57,6 +56,10 @@ export function Home() {
       <Reviews />
 
       <Blog />
+
+      <Sponsor />
+
+      <Footer2 />
     </>
   );
 }

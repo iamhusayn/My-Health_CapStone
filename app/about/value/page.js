@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ContentBtn from "../../_components/Buttons/ContentBtn";
 import SectionHeader from "../../_components/SectionHeader";
+import CompanyValue from "@/app/_components/CompanyValue";
 
 export function ValuePage() {
   return (
@@ -26,74 +27,14 @@ export function ValuePage() {
         </header>
       </section>
 
-      <section className="bg-white md:h-[900px] p-10 md:px-40 md:py-20 gap-10 justify-center md:overflow-hidden">
+      <section className="bg-white lg:h-[900px] p-10 lg:px-40 lg:py-20 gap-10 justify-center lg:overflow-hidden">
         <div className="text-slate-950 text-center">
           <SectionHeader
             header="Company Value"
             paragraph="Why are these our values?"
           />
         </div>
-        <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-2 gap-14 py-16">
-          <div className="bg-slate-950 w-96 lg:w-[700px] lg:h-[300px] rounded-lg p-12 space-y-4">
-            <h3 className="text-white text-2xl lg:text-4xl">
-              <strong>Trust:</strong>
-            </h3>
-            <p className="text-white text-lg lg:text-2xl">
-              Central to MediCare's mission is trust. We believe in cultivating
-              trust-filled relationships that serve as the bedrock for enduring
-              partnerships.
-            </p>
-          </div>
-
-          <div className="bg-slate-950 w-96 lg:w-[700px] lg:h-[300px] rounded-lg p-12 space-y-4">
-            <h3 className="text-white text-2xl lg:text-4xl">
-              <strong>Innovation:</strong>
-            </h3>
-            <p className="text-white text-lg md:text-2xl">
-              We are committed to creative solutions and embracing new
-              technologies.
-            </p>
-          </div>
-
-          <div className="bg-slate-950 w-96 md:w-[700px] md:h-[300px] rounded-lg p-12 space-y-4">
-            <h3 className="text-white text-2xl md:text-4xl">
-              <strong>Customer Focus:</strong>
-            </h3>
-            <p className="text-white text-lg md:text-2xl">
-              We prioritize our clients' needs and strive for excellence in all
-              interactions.
-            </p>
-          </div>
-
-          <div className="bg-slate-950 w-96 md:w-[700px] md:h-[300px] rounded-lg p-12 space-y-4">
-            <h3 className="text-white text-2xl md:text-4xl">
-              <strong>Integrity:</strong>
-            </h3>
-            <p className="text-white text-lg md:text-2xl">
-              We uphold honesty and strong moral principles in every decision we
-              make.
-            </p>
-          </div>
-
-          <div className="bg-slate-950 w-96 md:w-[700px] md:h-[300px] rounded-lg p-12 space-y-4">
-            <h3 className="text-white text-2xl md:text-4xl">
-              <strong>Collaboration:</strong>
-            </h3>
-            <p className="text-white text-lg md:text-2xl">
-              We believe that teamwork and open communication lead to the best
-              results.
-            </p>
-          </div>
-
-          <div className="bg-slate-950 w-96 md:w-[700px] md:h-[300px] rounded-lg p-12 space-y-4">
-            <h3 className="text-white text-2xl md:text-4xl">
-              <strong>Quality:</strong>
-            </h3>
-            <p className="text-white text-lg md:text-2xl">
-              We are dedicated to delivering top-notch products and services.
-            </p>
-          </div>
-        </div>
+        <CompanyValue />
       </section>
 
       <section className="bg-slate-950 md:h-[400px] flex flex-col py-8 mb-1 mt-40 pt-14 items-center">
