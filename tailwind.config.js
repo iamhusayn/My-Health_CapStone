@@ -12,6 +12,13 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      }
     },
   },
   plugins: [],

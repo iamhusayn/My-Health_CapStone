@@ -34,6 +34,7 @@ export function Home() {
               <HeroTag
                 heroheader="Welcome to MediCare"
                 heroparagraph="We help you through the most vulnerable and joyful life stages"
+                btnTag="Explore more"
               />
             </div>
           </header>
@@ -42,14 +43,14 @@ export function Home() {
 
       <section className="items-center mt-80 lg:mt-28">
         <SectionHeader header="An end-to-end platform supporting members in 175+ countries" />
-        <SupportCard />
+        <SupportCard className=""/>
       </section>
 
       <session className="pt-60">
         <About />
       </session>
 
-      <Services />
+      {/* <Services />
 
       <Doctors />
 
@@ -57,9 +58,13 @@ export function Home() {
 
       <Blog />
 
-      <Sponsor />
+      <Sponsor /> */}
 
-      <Footer2 />
+      <Footer2 
+        header="Take the next step"
+        paragraph={"Let’s talk about how we can work together to make healthcare work for all of us."}
+        btnTag={"Request a demo"}
+      />
     </>
   );
 }

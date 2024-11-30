@@ -17,3 +17,22 @@ playfair-display {
   font-weight: 300;
   font-style: normal;
 }
+
+@keyframes scrollleft {
+  from {}
+
+  to {
+    left: -200px;
+  }
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}

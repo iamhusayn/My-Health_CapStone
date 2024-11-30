@@ -13,7 +13,6 @@ const DoctorsBio = ([organization, docname, speciality, location, practise, rati
                 alt="Picture of doctors"
                 width={200}
                 height={200}
-                className=""
               />
             </div>
             <div className="flex md:flex-col gap-3">
