@@ -14,6 +14,7 @@ import Reviews from "../_components/Review";
 import Sponsor from "../_components/Sponsor";
 import ContentBtn from "../_components/Buttons/ContentBtn";
 import Footer2 from "../_components/Footer2";
+import ServicesCard from "../_components/ServicesCard";
 
 export function Home() {
   return (
@@ -46,19 +47,19 @@ export function Home() {
         <SupportCard className=""/>
       </section>
 
-      <session className="pt-60">
+      {/* <session className="pt-60">
         <About />
-      </session>
+      </session> */}
 
-      {/* <Services />
+      <ServicesCard />
 
       <Doctors />
 
-      <Reviews />
+      {/* <Reviews /> */}
 
-      <Blog />
+      {/* <Blog /> */}
 
-      <Sponsor /> */}
+      {/* <Sponsor /> */}
 
       <Footer2 
         header="Take the next step"

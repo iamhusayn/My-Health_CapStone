@@ -69,7 +69,7 @@ const SupportCard = () => {
             {support.map((card, index) => (
               <div
                 key={index}
-                className="embla__slide flex flex-col lg:flex-row px-10 lg:px-28 w-full h-full gap-10"
+                className="embla__slide flex flex-col lg:flex-row px-10 lg:px-28 lg:space-x-0 min-w-full max-h-[700px] gap-10"
               >
                 <div className="flex lg:flex-col text-slate-950 lg:px-40">
                   <div className="flex flex-col space-y-8">
@@ -90,7 +90,7 @@ const SupportCard = () => {
                     alt="Why Join Us"
                     width={420}
                     height={220}
-                    className="lg:w-[2000px] lg:h-[600px] rounded-lg"
+                    className="lg:w-[2000px] lg:max-h-[600px] rounded-lg"
                   />
                 </div>
               </div>
