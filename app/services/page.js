@@ -6,6 +6,7 @@ import HeaderBtn from "../_components/Buttons/HeaderBtn";
 import ServicesCard from "../_components/ServicesCard";
 import Image from "next/image";
 import HeroTag from "../_components/HeroTag";
+import SectionHeader from "../_components/SectionHeader";
 
 const page = () => {
   const icon1 = <RiMicroscopeLine size={35} className="text-background" />;
@@ -13,10 +14,10 @@ const page = () => {
   const icon3 = <BsLungsFill size={35} className="text-background" />;
   return (
     <>
-      <section className="relative flex justify-center md:h-[800px]">
+      <section className="relative flex justify-center md:h-[800px] overflow-hidden ">
         <div className="absolute overflow-hidden -z-50">
           <Image
-            src="https://res.cloudinary.com/digotb1jl/image/upload/v1730431352/pexels-jonathanborba-3279203_dopwnh.jpg"
+            src="https://res.cloudinary.com/digotb1jl/image/upload/v1730430547/pexels-zeoxs-11661531_oo4n5r.jpg"
             alt="Picture of doctors"
             width={1920}
             height={400}
@@ -33,7 +34,7 @@ const page = () => {
           </header>
         </div>
       </section>
-      
+
       <div className="min-h-screen w-full flex flex-col justify-center lg:px-32 px-5 pt-24 lg:pt-16">
         <div className="flex flex-col items-center lg:flex-col justify-between">
           <div>
@@ -46,14 +47,10 @@ const page = () => {
               they have historically been limited in scope under Medicare.
             </p>
             <div className="mt-4 lg:mt-0">
-              <HeaderBtn btnTittle= "Check Our Services" />
+              <HeaderBtn btnTittle="Check Our Services" />
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row gap-5 pt-14">
-            <ServicesCard icon={icon1} tittle="Lab Test" />
-            <ServicesCard icon={icon2} tittle="Health Check" />
-            <ServicesCard icon={icon3} tittle="Heart Check" />
-          </div>
+          <div className="flex flex-col lg:flex-row gap-5 pt-14"></div>
         </div>
       </div>
     </>
