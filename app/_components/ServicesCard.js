@@ -72,25 +72,25 @@ const ServicesCard = ({ icon, tittle }) => {
 
   return (
     <>
-      <div className="flex flex-col lg:gird lg:grid-cols-2 items-center justify-center mt-40">
+      <div className="flex flex-col lg:gird lg:grid-cols-2 items-center justify-center mt-20 gap-10 p-6">
         {" "}
         <SectionHeader
           header="Our Services"
           paragraph="We are here to serve you better"
         />
-        <div className="flex flex-col my-10 mx-36 p-24 lg:grid lg:grid-cols-3 gap-20">
+        <div className="flex flex-col lg:grid lg:grid-cols-3 gap-20 px-6">
           {cards.map((_card, index) => (
             <div
-              className="w-full h-full text-black rounded-2xl shadow-lg p-16  cursor-pointer space-y-6"
+              className="text-black rounded-2xl shadow-lg p-16 cursor-pointer space-y-4"
               key={index}
             >
               <div className="flex flex-col items-center m-auto h-20 w-20 bg-white p-auto rounded-full transition-colors duration-300 ease-in-out transform hover:scale-90">
                 {_card.icon}
               </div>
-              <h1 className="text-center font-bold text-lg lg:text-3xl">
+              <h1 className="text-center font-bold text-2xl lg:text-3xl">
                 {_card.tittle}
               </h1>
-              <p className="text-center text-lg lg:text-xl">
+              <p className="text-center text-xl lg:text-2xl">
                 {_card.paragraph}
               </p>
             </div>

@@ -18,7 +18,7 @@ import ServicesCard from "../_components/ServicesCard";
 
 export function Home() {
   return (
-    <>
+    <main>
       <section className="relative flex justify-center lg:h-[800px]">
         <div className="absolute overflow-hidden -z-50">
           <Image
@@ -44,29 +44,33 @@ export function Home() {
 
       <section className="items-center mt-80 lg:mt-28">
         <SectionHeader header="An end-to-end platform supporting members in 175+ countries" />
-        <SupportCard className=""/>
+        <SupportCard className="" />
       </section>
 
       {/* <session className="pt-60">
         <About />
       </session> */}
 
-      <ServicesCard />
+      <div id="servicecard">
+        <ServicesCard />
+      </div>
 
-      <Doctors />
+      <div id="doctors">
+        <Doctors />
+      </div>
 
       {/* <Reviews /> */}
 
-      {/* <Blog /> */}
-
       {/* <Sponsor /> */}
 
-      <Footer2 
+      <Footer2
         header="Take the next step"
-        paragraph={"Let’s talk about how we can work together to make healthcare work for all of us."}
+        paragraph={
+          "Let’s talk about how we can work together to make healthcare work for all of us."
+        }
         btnTag={"Request a demo"}
       />
-    </>
+    </main>
   );
 }
 

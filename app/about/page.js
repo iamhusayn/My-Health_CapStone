@@ -34,7 +34,7 @@ const AboutPage = () => {
           Our Story
         </h1>
         <div className="flex flex-col items-center lg:flex-row justify-center gap-10 m-10">
-          <div className="bg-slate-950 w-full lg:max-w-[800px] space-y-4 p-6 m-6 rounded-lg">
+          <div className="bg-slate-950 w-full lg:max-w-[800px] space-y-4 p-12 m-6 rounded-lg">
             <h1 className="font-bold text-2xl lg:text-4xl text-white">
               Relentlessly focused on closing gaps in care for women and
               families
@@ -72,19 +72,23 @@ const AboutPage = () => {
               alt="Picture of children"
               width={200}
               height={300}
-              className="relative bg-slate-950 p-4 lg:w-full lg:h-[560px] space-y-6 rounded-xl"
+              className="relative p-4 lg:w-full lg:h-[560px] space-y-6 rounded-xl"
             />
             <Image
               src="https://res.cloudinary.com/digotb1jl/image/upload/v1730435387/pexels-rdne-6182527_kpte0u.jpg"
               alt="Picture of children"
               width={200}
               height={300}
-              className="relative bg-slate-950 p-4 lg:hidden space-y-6 rounded-lg"
+              className="relative p-4 lg:hidden space-y-6 rounded-lg"
             />
           </div>
         </div>
       </div>
+
+
       <ValuePage />
+
+      
     </>
   );
 };

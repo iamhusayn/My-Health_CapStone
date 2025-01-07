@@ -14,27 +14,27 @@ const Doctors = () => {
       id: 1,
       imageUrl:
         "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
-      name: "Dr. Awilo",
+      name: "Dr. Adebayo",
       speciality: "Dentist",
     },
     {
       id: 2,
       imageUrl:
-        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
+        "https://res.cloudinary.com/digotb1jl/image/upload/v1736143247/pexels-carmel-nsenga-735492-19218034_zwbjcw.jpg",
       name: "Dr. Fashina",
       speciality: "Neurologist",
     },
     {
       id: 3,
       imageUrl:
-        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
+        "https://res.cloudinary.com/digotb1jl/image/upload/v1736143220/pexels-tima-miroshnichenko-5452298_z0uyeh.jpg",
       name: "Dr. Charles",
       speciality: "Medical Psychologist",
     },
     {
       id: 4,
       imageUrl:
-        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
+        "https://res.cloudinary.com/digotb1jl/image/upload/v1736143235/pexels-martins-john-572778471-19596247_r49uro.jpg",
       name: "Dr. Akuyili",
       speciality: "Psychiatrist",
     },
@@ -42,35 +42,42 @@ const Doctors = () => {
     {
       id: 5,
       imageUrl:
-        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
-      name: "Dr. Akuyili",
-      speciality: "Psychiatrist",
+        "https://res.cloudinary.com/digotb1jl/image/upload/v1736143228/pexels-tima-miroshnichenko-5452201_oko72q.jpg",
+      name: "Dr. Martins",
+      speciality: "Cardiologist",
     },
 
     {
       id: 6,
       imageUrl:
-        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
-      name: "Dr. Akuyili",
-      speciality: "Psychiatrist",
+        "https://res.cloudinary.com/digotb1jl/image/upload/v1736143206/pexels-thirdman-5327656_stsqww.jpg",
+      name: "Dr. Ebenezer",
+      speciality: "Physiologist",
     },
 
+    // {
+    //   id: 7,
+    //   imageUrl:
+    //     "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
+    //   name: "Dr. Akuyili",
+    //   speciality: "Psychiatrist",
+    // },
 
-    {
-      id: 7,
-      imageUrl:
-        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
-      name: "Dr. Akuyili",
-      speciality: "Psychiatrist",
-    },
+    // {
+    //   id: 8,
+    //   imageUrl:
+    //     "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
+    //   name: "Dr. Akuyili",
+    //   speciality: "Psychiatrist",
+    // },
 
-    {
-      id: 8,
-      imageUrl:
-        "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
-      name: "Dr. Akuyili",
-      speciality: "Psychiatrist",
-    },
+    // {
+    //   id: 9,
+    //   imageUrl:
+    //     "https://res.cloudinary.com/digotb1jl/image/upload/v1730454963/pexels-ivan-samkov-4989163_iryshc.jpg",
+    //   name: "Dr. Akuyili",
+    //   speciality: "Psychiatrist",
+    // },
   ];
 
   const slider = useRef(null);
@@ -115,16 +122,17 @@ const Doctors = () => {
   return (
     <div className="min-h-screen w-full flex flex-col justify-center items-center lg:px-32 px-5 pt-24 lg:pt-16">
       <div className="flex flex-col items-center justify-center mb-10 lg:mb-0">
-        <div>
-          <h1 className="text-4xl font-semibold text-center lg:text-start">
+        <div className="flex flex-col items-center gap-8">
+          <h1 className="text-4xl lg:text-5xl font-bold text-center lg:text-start">
             Our Doctors
           </h1>
-          <p className="mt-2 text-center lg:text-start">
+          <p className="mt-2 text-xl text-center lg:text-start lg:text-2xl">
             Medicare dental services are an essential part of overall healthcare
             for older adults and individuals with disabilities, but they have
             historically been limited in scope under Medicare.
           </p>
-          <div className="flex gap-5 mt-4 lg:mt-0">
+
+          {/* <div className="flex gap-5 mt-4 lg:mt-0">
             <button
               className="bg-slate-500 text-white px-4 py-2 rounded-lg active:bg-slate-800"
               onClick={() => slider.current.slickPrev()}
@@ -137,7 +145,7 @@ const Doctors = () => {
             >
               <FaArrowRight size={25} />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -148,12 +156,12 @@ const Doctors = () => {
               className="w-[350px] h-[350px] text-black rounded-xl shadow-lg mb-2 cursor-pointer"
               key={index}
             >
-              <div className="m-auto h-56 w-40">
+              <div className="m-auto h-56 w-1/3">
                 <img src={e.imageUrl} alt="img" />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h1 className="font-semibold text-xl pt-4">{e.name}</h1>
-                <h3 className="pt-2">{e.speciality}</h3>
+                <h1 className="font-bold text-xl pt-4">{e.name}</h1>
+                <h3 className="font-semibold text-xl pt-2">{e.speciality}</h3>
               </div>
             </div>
           ))}

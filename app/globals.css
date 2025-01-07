@@ -36,3 +36,150 @@ playfair-display {
   flex: 0 0 100%;
   min-width: 0;
 }
+
+
+.value-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  width: 100%;
+  
+}
+.tab-container {
+  /* background-color: green; */
+  width: 1500px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+input {
+  display: none;
+}
+
+.tab-name {
+  color: rgb(0, 4, 15);
+  /* font-family: poppins; */
+  font-size: x-large;
+  font-weight: 800;
+  height: 45px;
+  padding: 5px 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+
+
+input:checked + label .tab-name {
+  background: rgb(0, 4, 15);
+  color: white;
+  font-size: x-large;
+  font-weight: 800;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tab-content {
+  position: absolute;
+  top: 50px;
+  left: 90px;
+  background: rgb(206, 206, 206);
+  color: rgb(0, 4, 15);
+  font-size: x-large;
+  padding: 100px;
+  width: 90%;
+  height: 85%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 0;
+  transition: 0.5s;
+}
+
+input:checked + label .tab-content {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+.value-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  width: 100%;
+  
+}
+.tab-container {
+  /* background-color: green; */
+  width: 1500px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+input {
+  display: none;
+}
+
+.tab-name {
+  color: rgb(0, 4, 15);
+  /* font-family: poppins; */
+  font-size: x-large;
+  font-weight: 800;
+  height: 45px;
+  padding: 5px 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+
+
+input:checked + label .tab-name {
+  background: rgb(0, 4, 15);
+  color: white;
+  font-size: x-large;
+  font-weight: 800;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tab-content {
+  position: absolute;
+  top: 50px;
+  left: 90px;
+  background: rgb(206, 206, 206);
+  color: rgb(0, 4, 15);
+  font-size: x-large;
+  padding: 100px;
+  width: 90%;
+  height: 85%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 0;
+  transition: 0.5s;
+}
+
+input:checked + label .tab-content {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+}
