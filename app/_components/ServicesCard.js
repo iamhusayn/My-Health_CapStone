@@ -8,6 +8,7 @@ import { CiPill } from "react-icons/ci";
 import { CgEyeAlt } from "react-icons/cg";
 import { FaBacteria } from "react-icons/fa";
 import SectionHeader from "./SectionHeader";
+import Link from "next/link";
 
 
 
@@ -26,7 +27,7 @@ const ServicesCard = ({ icon, tittle }) => {
       tittle: "Lab Test",
       paragraph:
         "Medicare dental services are an essential part of overall healthcare for older adults and individuals with disabilities, but they have historically been limited in scope under Medicare.",
-      link: { href: "" },
+      
     },
 
     {
@@ -34,7 +35,7 @@ const ServicesCard = ({ icon, tittle }) => {
       tittle: "Health Check",
       paragraph:
         "Medicare dental services are an essential part of overall healthcare for older adults and individuals with disabilities, but they have historically been limited in scope under Medicare.",
-      link: { href: "" },
+      
     },
 
     {
@@ -42,7 +43,7 @@ const ServicesCard = ({ icon, tittle }) => {
       tittle: "Heart Check",
       paragraph:
         "Medicare dental services are an essential part of overall healthcare for older adults and individuals with disabilities, but they have historically been limited in scope under Medicare.",
-      link: { href: "" },
+      
     },
 
     {
@@ -50,7 +51,7 @@ const ServicesCard = ({ icon, tittle }) => {
       tittle: "Diagnosis",
       paragraph:
         "Medicare dental services are an essential part of overall healthcare for older adults and individuals with disabilities, but they have historically been limited in scope under Medicare.",
-      link: { href: "" },
+      
     },
 
     {
@@ -58,7 +59,7 @@ const ServicesCard = ({ icon, tittle }) => {
       tittle: "Optical Check",
       paragraph:
         "Medicare dental services are an essential part of overall healthcare for older adults and individuals with disabilities, but they have historically been limited in scope under Medicare.",
-      link: { href: "" },
+
     },
 
     {
@@ -66,7 +67,6 @@ const ServicesCard = ({ icon, tittle }) => {
       tittle: "Infections",
       paragraph:
         "Medicare dental services are an essential part of overall healthcare for older adults and individuals with disabilities, but they have historically been limited in scope under Medicare.",
-      link: { href: "" },
     },
   ];
 
@@ -90,9 +90,11 @@ const ServicesCard = ({ icon, tittle }) => {
               <h1 className="text-center font-bold text-2xl lg:text-3xl">
                 {_card.tittle}
               </h1>
-              <p className="text-center text-xl lg:text-2xl">
-                {_card.paragraph}
-              </p>
+              <link
+                className="text-center text-xl lg:text-2xl"
+                href={`/ervices/${_card.tittle}`}
+              >
+              </link>
             </div>
           ))}
         </div>

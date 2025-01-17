@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const CarerPage = () => {
+const CareerPage = () => {
   return (
     <>
       <section className="relative h-screen flex items-center justify-center text-white text-center">
@@ -181,4 +181,4 @@ const CarerPage = () => {
   );
 };
 
-export default CarerPage;
+export default CareerPage;

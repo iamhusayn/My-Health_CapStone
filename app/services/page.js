@@ -35,24 +35,8 @@ const page = () => {
         </div>
       </section>
 
-      <div className="min-h-screen w-full flex flex-col justify-center lg:px-32 px-5 pt-24 lg:pt-16">
-        <div className="flex flex-col items-center lg:flex-col justify-between">
-          <div>
-            <h1 className="text-4xl font-semibold text-center lg:text-start">
-              Our Services
-            </h1>
-            <p className="mt-2 text-center lg:text-start">
-              Medicare dental services are an essential part of overall
-              healthcare for older adults and individuals with disabilities, but
-              they have historically been limited in scope under Medicare.
-            </p>
-            <div className="mt-4 lg:mt-0">
-              <HeaderBtn btnTittle="Check Our Services" />
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row gap-5 pt-14"></div>
-        </div>
-      </div>
+
+      <ServicesCard />
     </>
   );
 };

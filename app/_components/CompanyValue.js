@@ -13,7 +13,7 @@ const CompanyValue = () => {
     <>
       <div className="value-container">
         <div className="tab-container">
-          <input type="radio" name="option" id="1"></input>
+          <input type="radio" name="option" id="1" ></input>
           <label for="1">
             <div className="tab-name">Trust</div>
             <div className="tab-content">
@@ -33,7 +33,7 @@ const CompanyValue = () => {
             </div>
           </label>
 
-          <input type="radio" name="option" id="2"></input>
+          <input type="radio" name="option" id="2" ></input>
           <label for="2">
             <div className="tab-name">Innovation</div>
             <div className="tab-content">

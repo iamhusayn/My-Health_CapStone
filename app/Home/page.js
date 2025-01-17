@@ -15,6 +15,7 @@ import Sponsor from "../_components/Sponsor";
 import ContentBtn from "../_components/Buttons/ContentBtn";
 import Footer2 from "../_components/Footer2";
 import ServicesCard from "../_components/ServicesCard";
+import CareerPage from "../about/career/page";
 
 export function Home() {
   return (
@@ -58,6 +59,8 @@ export function Home() {
       <div id="doctors">
         <Doctors />
       </div>
+
+      {/* <CareerPage /> */}
 
       {/* <Reviews /> */}
 
