@@ -31,7 +31,7 @@ const ContactPage = () => {
 
       <section className="mx-auto px-8 pt-60 py-16 bg-white gap-10">
         <h2 className="text-3xl md:text-6xl font-bold text-center mb-8">
-          We'd love to have a conversation
+          We would love to have a conversation
         </h2>
 
         <div className="flex flex-col lg:grid lg:grid-cols-2 items-center justify-center bg-slate-950 lg:max-w-[1200px] lg:h-full m-auto p-auto p-16 rounded-lg gap-10">

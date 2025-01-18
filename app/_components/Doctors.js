@@ -7,6 +7,7 @@ import React, { useRef } from "react";
 // import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 
 const Doctors = () => {
   const meetDocs = [
@@ -157,7 +158,7 @@ const Doctors = () => {
               key={index}
             >
               <div className="m-auto h-56 w-1/3">
-                <img src={e.imageUrl} alt="img" />
+                <Image src={e.imageUrl} alt="img" width={132} height={132}/>
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h1 className="font-bold text-xl pt-4">{e.name}</h1>
